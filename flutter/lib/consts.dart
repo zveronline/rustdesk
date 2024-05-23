@@ -63,6 +63,7 @@ const String kWindowEventActiveDisplaySession = "active_display_session";
 const String kWindowEventGetRemoteList = "get_remote_list";
 const String kWindowEventGetSessionIdList = "get_session_id_list";
 const String kWindowEventRemoteWindowCoords = "remote_window_coords";
+const String kWindowEventSetFullscreen = "set_fullscreen";
 
 const String kWindowEventMoveTabToNewWindow = "move_tab_to_new_window";
 const String kWindowEventGetCachedSessionData = "get_cached_session_data";
@@ -216,7 +217,7 @@ const kFullScreenEdgeSize = 0.0;
 const kMaximizeEdgeSize = 0.0;
 // Do not use kWindowEdgeSize directly. Use `windowEdgeSize` in `common.dart` instead.
 final kWindowEdgeSize = isWindows ? 1.0 : 5.0;
-final kWindowBorderWidth = isLinux ? 1.0 : 0.0;
+final kWindowBorderWidth = 1.0;
 const kDesktopMenuPadding = EdgeInsets.only(left: 12.0, right: 3.0);
 const kFrameBorderRadius = 12.0;
 const kFrameClipRRectBorderRadius = 12.0;
